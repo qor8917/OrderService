@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 public class ProductOrder {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    public Long id;
 
     public Long userId;
     public Long productId;
