@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.Map;
 
-@FeignClient(name = "paymentClient",url = "http://payment-service:8080")
+@FeignClient(name = "paymentClient",url = "http://payment-service-rest:8080")
 public interface PaymentClient
 {
     @PostMapping("/payment/process-payment")

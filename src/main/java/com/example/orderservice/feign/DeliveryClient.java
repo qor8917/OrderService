@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.Map;
 
-@FeignClient(name = "deliveryClient",url = "http://delivery-service:8080")
+@FeignClient(name = "deliveryClient",url = "http://delivery-service-rest:8080")
 public interface DeliveryClient
 {
     @PostMapping("/delivery/process-delivery")
